@@ -1,5 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo|Merriweather&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Caveat&display=swap);
+.state-defaults-local-storage .ffo-textarea > textarea.form-control {
+  height: 100% !important;
+}
+
+.state-defaults-comparer table tr td,
+.state-defaults-comparer table tr th {
+  max-height: 10px;
+  white-space: nowrap;
+  height: 10px;
+  overflow: hidden;
+  padding: 0;
+  font-size: 12px;
+}
+
 .state-default-table tr {
   height: 20px;
   cursor: crosshair;
@@ -220,45 +234,6 @@
     filter: blur(0);
     opacity: 1;
 }
-}
-
-[class*="push"][data-v-bea6846e] {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  border: 0;
-  margin: 1em;
-  outline: none;
-  background-color: #c2290a;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: box-shadow 200ms;
-}
-.push--skeuo[data-v-bea6846e] {
-  box-shadow: inset 0 2.5px 0 #d02c0b, inset 0 -$push-size/24 60px/60 #b8270a, 0 0 60px/60 #c2290a, inset 0 0 60px/30 #a52309, inset 0 0 60px/30 rgba(51,51,51,0.5), inset 0 0 60px/60 60px/12 #c2290a, inset 0 -$push-size/30 60px/40 60px/10 rgba(51,51,51,0.3), inset 0 0 60px/60 60px/10 #9b2108, inset 0 0 60px/60 60px/10 rgba(51,51,51,0.3), inset 0 0 60px/120 60px/9.2 #611405, inset 0 0 60px/120 60px/8 rgba(244,84,52,0.3), inset 0 60px/20 0 60px/8.5 rgba(237,50,12,0.3), inset 0 -$push-size/20 60px/60 60px/8.5 rgba(174,37,9,0.8), inset 0 0 0 60px/5.5 #c2290a, inset 0 60px/2.5 60px/7.5 #b8270a, inset 0 0 60px/10 60px/6 #ae2509, 0 60px/40 60px/20 rgba(0,0,0,0.5);
-}
-.push--skeuo[data-v-bea6846e]:active,
-.push--skeuo.is-pushed[data-v-bea6846e] {
-  box-shadow: inset 0 60px/24 0 #d02c0b, inset 0 -$push-size/24 60px/60 #b8270a, 0 0 60px/60 #c2290a, inset 0 0 60px/30 #a52309, inset 0 0 60px/30 rgba(51,51,51,0.5), inset 0 0 60px/60 60px/12 #c2290a, inset 0 -$push-size/30 60px/40 60px/10 rgba(51,51,51,0.3), inset 0 0 60px/60 60px/10 #9b2108, inset 0 0 60px/60 60px/10 rgba(51,51,51,0.3), inset 0 0 60px/40 60px/8.5 #741806, inset 0 0 60px/120 60px/7.5 rgba(244,84,52,0.8), inset 0 60px/20 0 28px rgba(237,50,12,0.5), inset 0 -$push-size/20 60px/60 28px rgba(155,33,8,0.8), inset 0 0 0 60px/5.5 #bc280a, inset 0 60px/2.5 60px/7.5 #b22609, inset 0 0 60px/10 60px/6 #a52309, 0 60px/40 60px/20 rgba(0,0,0,0.5);
-  background-color: #be280a;
-}
-.push--skeuo[data-v-bea6846e]:active:before,
-.push--skeuo.is-pushed[data-v-bea6846e]:before {
-  opacity: 0.5;
-}
-.push--skeuo[data-v-bea6846e]:before {
-  content: '';
-  position: absolute;
-  bottom: 13.333333333333334px;
-  left: 16.666666666666668px;
-  display: block;
-  width: 27.27272727272727px;
-  height: 18.181818181818183px;
-  background: rgba(244,84,52,0.8);
-  background: linear-gradient(to top, rgba(246,108,81,0.7) 0%, rgba(194,41,10,0.9) 100%);
-  border-radius: 40% 40% 60% 60%;
-  transition: opacity 200ms;
 }
 
 .ss-main {
@@ -547,6 +522,16 @@
           background-color: #fffb8c; }
 
 
+.ffo-textarea>textarea,
+.ffo-textarea>.markdown {
+  height: 200px;
+}
+.ffo-textarea>.markdown {
+  border: 1px solid #4d4d4d;
+  padding: 3px;
+  overflow: hidden;
+}
+
 .content.state-defaults {
   padding-left: 10px;
   font-family: sans-serif;
@@ -591,5 +576,3 @@
   padding-top: 25px;
 }
 
-
-/*# sourceMappingURL=main.css.map*/
