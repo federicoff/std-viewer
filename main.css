@@ -532,8 +532,27 @@
   overflow: hidden;
 }
 
+.card.ffo-card>.card-header {
+  cursor: pointer;
+}
+
+.ffo-blocker[data-v-3222d358] {
+  height: 100%;
+  width: 100%;
+}
+.ffo-blocker>form[data-v-3222d358] {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ffo-blocker>form input[data-v-3222d358] {
+  text-align: center;
+}
+
 .content.state-defaults {
-  padding-left: 10px;
+  padding: 0 10px;
   font-family: sans-serif;
   font-size: 10px;
   background-color: #222;
