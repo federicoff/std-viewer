@@ -12,6 +12,19 @@
   overflow: hidden;
   padding: 0;
   font-size: 12px;
+  padding: 0 4px;
+}
+.state-defaults-comparer table tr td.lower-threshhold,
+.state-defaults-comparer table tr th.lower-threshhold,
+.state-defaults-comparer table tr td.upper-threshhold,
+.state-defaults-comparer table tr th.upper-threshhold,
+.state-defaults-comparer table tr td.incrementaltax,
+.state-defaults-comparer table tr th.incrementaltax,
+.state-defaults-comparer table tr td.beginning-effective,
+.state-defaults-comparer table tr th.beginning-effective,
+.state-defaults-comparer table tr td.ending-effective,
+.state-defaults-comparer table tr th.ending-effective {
+  text-align: right;
 }
 
 .state-default-table tr {
@@ -530,6 +543,7 @@
   border: 1px solid #4d4d4d;
   padding: 3px;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .card.ffo-card>.card-header {
@@ -549,6 +563,10 @@
 }
 .ffo-blocker>form input[data-v-3222d358] {
   text-align: center;
+}
+
+.ffo-number-view {
+  display: inline-block;
 }
 
 @charset "UTF-8";
