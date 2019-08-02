@@ -81,7 +81,7 @@
 .category .detail .cat-header {
   display: flex;
   margin-left: -1px;
-  height: 20px;
+  height: 24px;
   font-size: 12px;
   cursor: pointer;
   border: 1px solid #101b26;
@@ -91,11 +91,14 @@
   font-weight: 700;
   border-radius: 5px;
   text-transform: uppercase;
+  align-items: center;
 }
 .category .detail .cat-header .icon-container {
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   width: 20px;
-  height: 20px;
+  height: 24px;
   padding-right: 2px;
   padding-left: 6px;
   border-bottom: 1px solid #101b26;
@@ -105,18 +108,21 @@
   font-size: 11px;
 }
 .category .detail .cat-header .cat-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 20px;
   font-weight: 700;
-  text-align: right;
-  font-size: 8px;
+  font-size: 9px;
   padding-top: 4.5px;
   padding-right: 3px;
+  background-color: #333;
+  color: #ccc;
 }
 .category .detail .cat-header .cat-name {
   padding-left: 5px;
   width: 300px;
   flex: 1;
-  border-left: 1px solid #101b26;
 }
 .category .detail .cat-header:hover {
   background-color: #cbdae9;
